@@ -1,0 +1,329 @@
+%-------------------------
+% Resume in Latex
+% Author : John Link
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[letter,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-5.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} {\small\textbf{#1} - \footnotesize{\text{#2}} - \footnotesize{#4}} & {\footnotesize{#3}}\vspace{-1mm}
+    \end{tabular*}
+    \vspace{-8.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{0mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+\newcommand{\resumeOverview}[1]{
+\vspace{0mm}\item[]
+    \begin{itemize}
+        \item #1
+    \end{itemize}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+
+
+
+
+\newcommand{\name}{John W. Link} % Your Name
+\newcommand{\course}{Bachelors of Science, Computer Science and Computer Engineering} % Your Course
+\newcommand{\phone}{571-295-7002} % Your Phone Number
+\newcommand{\emaila}{john.link33@gmail.com} %Email 1
+\newcommand{\github}{johnlink1} %Github
+\newcommand{\website}{https://jlinkprojects.com} %Website
+\newcommand{\linkedin}{johnwlink} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+
+\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{7.25cm} \LARGE{\textbf{\name}} & \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila}\hspace{5mm} \\
+    & \faPhone \hspace{0.2mm} +1-\phone \hspace{5mm}
+    
+\end{tabular*}
+
+%\begin{center}
+%    \LARGE{\textbf{\name}}
+%\end{center}
+\begin{tikzpicture}[remember picture,overlay]
+\node[xshift=6.5mm,yshift=-1mm,anchor=north west] at (current page.north west){%
+    \includegraphics[width=2cm]{jlinkprintersQR.png}};
+\end{tikzpicture}
+\vspace{-4.5mm}
+\begin{center}
+    \small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} github.com/\github} |  \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin.com/in/\linkedin} }
+\end{center}
+\vspace{-3mm}
+
+
+% | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +1-\phone
+
+
+%-----------EDUCATION-----------------
+
+\vspace{-1.5mm}
+
+\section{\textbf{Objective}}
+\begin{justify}\begin{itemize}[leftmargin=5ex, rightmargin=5ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small
+ To obtain a 2023 summer internship in the areas of computer science and engineering where I can utilize my problem solving and strategic thinking abilities to create and implement practical, innovative solutions to global problems
+\end{itemize}\end{justify}\vspace{-.5mm}
+\vspace{-5.5mm}
+
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+\resumeEdu
+{University of Virginia - Charlottesville, VA} 
+{Intended BS Computer Science and BS Computer Engineering} 
+{Aug 2020 - May 2024} %Event Dates
+{GPA: 3.84/4.0} %Website
+\vspace{-2.5mm}
+\newline
+
+
+\resumeEdu
+{James Madison High School - Vienna, VA} 
+{Advanced Studies Diploma} 
+{Aug 2016 - May 2020} %Event Dates
+{GPA: 4.46/4.0} %Website
+\resumeSubHeadingListEnd
+\vspace{-2.5mm}
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+
+\resumeExp
+{MITRE Corporation}
+{Summer Engineering Intern, Edge Computing for Autonomous Vehicles}
+{May 2022 - Aug 2022}
+{McLean, VA}
+\resumeItemListStart
+\item[$\bullet$] Utilizing edge computing to offload high intensity applications onto networked computers increasing computational overhead
+\item[$\bullet$] Experimenting with small scale autonomous vehicles to better understand how they perceive the world
+\resumeItemListEnd
+
+\resumeExp
+{MITRE Corporation}
+{Engineering Intern, Small Scale Autonomous Data Collection}
+{May 2021 - Aug 2021}
+{McLean, VA}
+\resumeItemListStart
+\item[$\bullet$] Working with AWS Deepracer to collect and analyze data from autonomous vehicles
+\resumeItemListEnd
+
+\resumeExp
+{MITRE Corporation}
+{Engineering Intern, 3D Printing and Engineering Design}
+{Aug 2020 - Feb 2021}
+{Charlottesville, VA}
+\resumeItemListStart
+\item[$\bullet$] Working with 3D Printing and CAD to design solutions for sponsors of MITRE
+\resumeItemListEnd
+
+\resumeExp
+{UVA Mechanical Engineering Rapid Prototyping Lab}
+{Technician and Teaching Assistant, 3D Printing and Introduction to Engineering}
+{Nov 2020 - Present}
+{Charlottesville, VA}
+\resumeItemListStart
+\item[$\bullet$] Design and assist with implementation of class activities/projects for first-year engineering courses
+\item[$\bullet$] Maintaining and operating the Stratasys 3D printers for all engineering departments
+\resumeItemListEnd
+
+\resumeExp
+{RPG Squarefoot Solutions}
+{Summer Intern, Alternate Reality Workflow}
+{Jun 2019 - Aug 2019}
+{Vienna, VA}
+\resumeItemListStart
+\item[$\bullet$] CAD and AI development to support construction industry product applications
+\item[$\bullet$] 3D printing design and support for prototypes and demo models
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects/Teams}}
+\resumeSubHeadingListStart
+
+\resumeProject
+{UVA Cavalier Autonomous Racing}
+{Charlottesville,  VA} %Project Name, Location Name
+{May 2020 - Present} %Event Dates
+{\href{https://autonomousracing.dev/}{autonomousracing.dev}} 
+\resumeItemListStart
+\item[$\bullet$] Participant in first ever head to head autonomous race in Indianapolis and Las Vegas Motor Speedways
+\item[$\bullet$] Researcher involved with simulation and vehicle interface control systems
+\resumeItemListEnd
+
+
+\resumeProject
+{Virginia Motorsports} %Project Name
+{Charlottesville, VA} %Project Name, Location Name
+{Apr 2021 - Present} %Event Dates
+{\href{https://www.virginiamotorsportseducation.org/}{vamotorsports.org}} %Website
+\resumeItemListStart
+\item[$\bullet$] Engineering design advisor for the UVA FSAE team, designing, reviewing, and building a full scale formula car 
+\item[$\bullet$] Lead researcher for electric transition of FSAE team including prototyping and EV swapping a legends racing car
+\resumeItemListEnd
+
+\resumeProject
+{Nova Labs Makerspace} %Project Name
+{Fairfax, VA} %Project Name, Location Name
+{Oct 2015 - Present} %Event Dates
+{\href{https://www.nova-labs.org/}{nova-labs.com}, \href{https://github.com/nova-labs/Nova-I3}{github.com/nova-labs/Nova-I3}} %Website
+\resumeItemListStart
+\item[$\bullet$] Active participant in Nova Labs 3D printer group responsible for maintaining the community 3D printers
+\item[$\bullet$] Volunteer work around the makerspace including teaching classes, building, and maintaining the space
+\resumeItemListEnd
+\vspace{-3mm}
+
+\hspace{-.5mm}\textbf{Other Teams}
+\vspace{-3.5mm}
+\resumeItemListStart
+\item[$\bullet$] FIRST Robotics Competition Team 620 \raisebox{-0.3mm}{\href{https://www.firstinspires.org/}{\footnotesize\faExternalLink}} : High school robotics program
+
+\item[$\bullet$] FIRST Technology Challenge Teams 6633, 6700, 12787 \raisebox{-0.3mm}{\href{https://www.firstinspires.org/}{\footnotesize\faExternalLink}} : Middle and high school robotics program
+
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+
+
+\section{\textbf{Technical Skills}}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Programming Languages:} C\textbf{+}\textbf{+}, C, Python, Java} & {\textbf{Operating Systems:} Linux, Windows, Apple OS} \\  
+\hspace{-3.1mm}{\textbf{ ML/AI:} Pytorch, Numpy, Pandas, Matplotlib} & {\textbf{Certifications:} CompTIA A\textbf{+}, S\textbf{+} and N\textbf{+} (Not Current)} \\
+\hspace{-3.1mm}{\textbf{ Modeling \& Simulation:} Fusion 360, Solidworks, Ansys Software} & {\textbf{Interfaces:} AWS, Git, ROS, ROS2, Latex}
+
+\end{tabular*}}
+\vspace{-5mm}
+
+\vspace{-4.5mm}
+\section{\textbf{Relevant Coursework}}
+\vspace{0.2mm}
+
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+\hspace{-3.1mm}\textbf{ Computer Science: }{Autonomous Vehicles, Data Structures and Algorithms, Databases, Operating Systems, Computer Networks}\\
+\hspace{-3.1mm}\textbf{ Mathematics: }{Differential Equations, Discrete Math, Probability, Linear Algebra}
+\end{tabular*}}
+
+\vspace{-3.5mm}
+\section{\textbf{Personal Interests}}
+\vspace{-0.4mm}
+
+\resumeItemListStart
+\item Intramural sports - volleyball, soccer, basketball, flag football
+\item Travel to over 30 states and 10 countries, experiencing culture and geography
+\item Formula 1 racing enthusiast 
+\item Making and tinkering with 3D printers, microelectronics, and home automation
+\resumeItemListEnd
+
+\vspace{2mm}
+
+%-------------------------------------------
+\end{document}
